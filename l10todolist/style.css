@@ -1,0 +1,87 @@
+* {box-sizing: border-box;}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 20rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    padding: 1rem;
+}
+
+h3{
+    color: #777;
+    font-size: 20px;
+    opacity: 0.8;
+    border-bottom: 1px dashed #777;
+    line-height: 70px;
+
+    padding: 0;
+    margin: 0;
+}
+
+small{
+    color: #999;
+    text-align: right;
+
+    display: block;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    width: 100%;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid orange;
+
+    padding: 8px 0;
+    transition: all 0.5s;
+}
+
+.form-control:focus{
+    outline: none;
+    border-color: blue;
+}
+
+.list-group{
+    height: 300px;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+.list-group li{
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+
+    padding: 1rem;
+    margin-top: -1px;
+}
+
+.list-group li:hover{
+    background-color: #f1f1f1;
+}
+
+.list-group li.done{
+    color: #777;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.list-group li.done::after{
+    content: '\f00c';
+    font-family: "FontAwesome";
+    font-style: normal;
+    float: right;
+
+}
