@@ -32,6 +32,10 @@ label img{
     height: 200px;
 }
 
+label img:hover{
+    opacity: 0.8;
+}
+
 .btn{
     width: 100%;
     color: #fff;
